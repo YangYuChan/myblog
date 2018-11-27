@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Mint from 'mint-ui'
+import './style/index.scss'
+import './font/iconfont.css'
 Vue.use(Mint)
 Vue.config.productionTip = false
 
