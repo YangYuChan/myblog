@@ -11,22 +11,22 @@
       <nav class="nav_bar">
         <ul>
           <li class="nav_item">
-            <a href="">
+            <router-link to="/">
               <div class="item_icon"><i class="icon iconfont icon-xiangmu"></i></div>
               <div class="item_name">笔记</div>
-            </a>
+            </router-link>
           </li>
           <li class="nav_item">
-            <a href="">
+            <router-link to="/Details">
               <div class="item_icon"><i class="icon iconfont icon-ziyuan"></i></div>
               <div class="item_name">作品</div>
-            </a>
+            </router-link>
           </li>
           <li class="nav_item">
-            <a href="">
+            <router-link to="/Details">
               <div class="item_icon"> <i class="icon iconfont icon-gerendangan"></i></div>
               <div class="item_name">关于我</div>
-            </a>
+            </router-link>
           </li>
         </ul>
       </nav>
