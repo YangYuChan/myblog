@@ -22,3 +22,152 @@ html,body{
   clear:both;
   overflow:hidden;
 }
+.home_container {
+  position: relative;
+  background-color: #f1f1f1;
+  height: auto;
+  margin-left: 7rem;
+}
+.home_section {
+  margin:5rem auto 0;
+  padding: 2rem 0;
+  width: 70%;
+}
+.details-content{
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
+  .details-inbox{
+    margin: 0 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    text-align: left;
+    .title{
+      margin: 1rem 0;
+    }
+    .create_message{
+      font-size: 14px;
+      color: #999;
+      .mess{
+        margin-right: 1rem;
+      }
+    }
+    .main-content{
+      margin: 1rem 0;
+      line-height: 2;
+      font-size: 16px;
+      color: #666;
+      .origin{
+        margin-bottom: 1rem;
+      }
+      a{
+        color: #41b883;
+      }
+    }
+    .tags {
+      .icon{
+        font-size: 16px;
+      }
+      a{
+        color: #41b883;
+        margin: 0 0.2rem;
+        background: #f3f3f3;
+        padding: 3px 6px;
+        border-radius: 3px;
+        font-size: 14px;
+      }
+    }
+    .share {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 2rem 0;
+      background: #eee;
+      .share-icon {
+        margin-left: 1rem;
+        .icon{
+          font-size: 40px;
+          color: #999;
+        }
+      }
+      .givelike {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:#41b883;
+        width: 20%;
+        height: 5rem;
+
+        a{
+          .icon{
+            font-size: 30px;
+          }
+          color: #ffffff;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .commit-box{
+    background-color: #ffffff;
+    margin: 1rem 1.5rem;
+    padding: 1rem 2rem;
+    text-align: left;
+    .title{
+      border-bottom: 1px solid #eee;
+      padding-bottom: 1rem;
+    }
+    .form-group{
+      margin: 1rem 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 14px;
+      .red{
+        color:red;
+      }
+      .form-contorl{
+        border-radius: 4px;
+        padding: 0.7rem;
+        border:1px solid #ccc;
+      }
+    }
+    .submit-btn{
+      text-align: center;
+      .mint-button--primary{
+        width: 20%;
+        background-color: #41b883;
+      }
+    }
+  }
+  .commit-list{
+    margin-top: 5rem;
+    .commit{
+      font-size: 14px;
+      color: #666;
+      margin: 1rem 0;
+      .commit-item{
+        border-bottom: 1px solid #eee;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        .user-info{
+          .username{
+            color: #41b883;
+          }
+          .time,
+          .like{
+            color: #999;
+            margin: 0 0 0 1rem;
+          }
+        }
+        .feedback {
+          padding: 1rem 0;
+        }
+        .quote{
+          background-color: #eeeeee;
+          padding: 1rem 1rem 0;
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,10 @@
 <template>
   <ul class="note_list">
     <li class="note_item" v-for="i in 10">
-      <a href="">
-        <h3 class="note_name">用 npm script 打造超溜的前端工作流</h3>
+      <router-link to="/Details">
+        <h3 class="note_name">
+         用 npm script 打造超溜的前端工作流
+        </h3>
         <div class="note_content">
           <span class="note_pic"><img src="../img/note_pic.png" alt=""></span>
           <span class="note_details">
@@ -18,13 +20,13 @@
             <li class="tags_item"><a href="">es6</a></li>
           </ul>
           <div class="create_message">
-            <span class="mess create_time">30分钟前</span>
+            <span class="mess create_time"><i class="icon iconfont icon-shijian"></i>&nbsp;2018-12-10</span>
             <span class="mess see"><i class="icon iconfont icon-chakan"></i>&nbsp;9000</span>
             <span class="mess commit"><i class="icon iconfont icon-pinglun"></i> &nbsp;10</span>
             <span class="mess like"><i class="icon iconfont icon-dianzan"></i> &nbsp;20</span>
           </div>
         </div>
-      </a>
+      </router-link>
     </li>
   </ul>
 </template>
@@ -44,11 +46,13 @@
   .note_list{
     float: left;
     width: 70%;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
     .note_item{
       background-color: #fff;
-      margin: 1.5rem 3rem;
       padding: 1rem;
       text-align: left;
+      border-bottom: 1px solid #EEE;
       .note_name {
         font-size: 16px;
         color: #333;
@@ -78,6 +82,10 @@
         }
       }
     }
+    .note_other{
+      display: flex;
+      justify-content: space-between;
+    }
     .create_message,
     .mess{
       display: flex;
@@ -88,7 +96,7 @@
     .create_message {
       margin: 0.5rem 0;
       .mess {
-        margin: 0 0.5rem;
+        margin-left: 1rem;
       }
     }
     .note_tags {
@@ -96,14 +104,14 @@
       justify-content: flex-start;
       align-items: center;
       .tags_item {
-        border: 1px solid #41b883;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        font-size: 12px;
-        color: #41b883;
-        margin-right: 0.5rem;
-        padding: 0.2rem 0.5rem;
+        a{
+          color: #41b883;
+          margin: 0 0.2rem;
+          background: #f3f3f3;
+          padding: 3px 6px;
+          border-radius: 3px;
+          font-size: 14px;
+        }
 
       }
     }
